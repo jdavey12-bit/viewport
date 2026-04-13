@@ -78,11 +78,16 @@ table {
 
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
+@media (prefers-color-scheme: dark) {
 
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
+    body{
+        background-color: var(--dark-gray);
+    }
+
 
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
-
+}
 
 
 /* ----- HEADINGS ----- */
@@ -302,13 +307,13 @@ img{
     #seven, #eight{
         grid-row: 3/4;
     } 
-}
-/* --------------- END LARGE SCREEN SIZES --------------- */
 
+/* --------------- END LARGE SCREEN SIZES --------------- */
+}
 
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
-@media screen and (miin-width:620px) {
+@media screen and (min-width:620px) {
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
      img{
         width: 300px;
